@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8266F95A1DCE7F9900392F0E /* BaseControllerWithMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266F9591DCE7F9900392F0E /* BaseControllerWithMenu.swift */; };
 		82F47FE41DCAE79A00C2EAA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F47FE31DCAE79A00C2EAA2 /* AppDelegate.swift */; };
 		82F47FE61DCAE79A00C2EAA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F47FE51DCAE79A00C2EAA2 /* ViewController.swift */; };
 		82F47FE91DCAE79A00C2EAA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F47FE71DCAE79A00C2EAA2 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		82F47FEE1DCAE79A00C2EAA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F47FEC1DCAE79A00C2EAA2 /* LaunchScreen.storyboard */; };
 		82F47FF91DCAE79A00C2EAA2 /* MyBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F47FF81DCAE79A00C2EAA2 /* MyBaseProjectTests.swift */; };
 		82F480041DCAE79A00C2EAA2 /* MyBaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F480031DCAE79A00C2EAA2 /* MyBaseProjectUITests.swift */; };
+		82F480131DCAEB3300C2EAA2 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F480121DCAEB3300C2EAA2 /* BaseCollectionView.swift */; };
+		82F480181DCB27FE00C2EAA2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F480171DCB27FE00C2EAA2 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8266F9591DCE7F9900392F0E /* BaseControllerWithMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseControllerWithMenu.swift; sourceTree = "<group>"; };
 		82F47FE01DCAE79A00C2EAA2 /* MyBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F47FE31DCAE79A00C2EAA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82F47FE51DCAE79A00C2EAA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		82F47FFF1DCAE79A00C2EAA2 /* MyBaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F480031DCAE79A00C2EAA2 /* MyBaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBaseProjectUITests.swift; sourceTree = "<group>"; };
 		82F480051DCAE79A00C2EAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F480121DCAEB3300C2EAA2 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		82F480171DCB27FE00C2EAA2 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8266F9571DCE70C500392F0E /* MyBase */ = {
+			isa = PBXGroup;
+			children = (
+				8266F9581DCE7DB400392F0E /* BaseController */,
+				82F480111DCAEA1600C2EAA2 /* BaseCollection */,
+			);
+			name = MyBase;
+			sourceTree = "<group>";
+		};
+		8266F9581DCE7DB400392F0E /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				8266F9591DCE7F9900392F0E /* BaseControllerWithMenu.swift */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
 		82F47FD71DCAE79A00C2EAA2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +120,8 @@
 		82F47FE21DCAE79A00C2EAA2 /* MyBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				8266F9571DCE70C500392F0E /* MyBase */,
+				82F480161DCB27DE00C2EAA2 /* TestMyBaseProject */,
 				82F47FE31DCAE79A00C2EAA2 /* AppDelegate.swift */,
 				82F47FE51DCAE79A00C2EAA2 /* ViewController.swift */,
 				82F47FE71DCAE79A00C2EAA2 /* Main.storyboard */,
@@ -123,6 +148,22 @@
 				82F480051DCAE79A00C2EAA2 /* Info.plist */,
 			);
 			path = MyBaseProjectUITests;
+			sourceTree = "<group>";
+		};
+		82F480111DCAEA1600C2EAA2 /* BaseCollection */ = {
+			isa = PBXGroup;
+			children = (
+				82F480121DCAEB3300C2EAA2 /* BaseCollectionView.swift */,
+			);
+			name = BaseCollection;
+			sourceTree = "<group>";
+		};
+		82F480161DCB27DE00C2EAA2 /* TestMyBaseProject */ = {
+			isa = PBXGroup;
+			children = (
+				82F480171DCB27FE00C2EAA2 /* HomeController.swift */,
+			);
+			name = TestMyBaseProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				82F47FE61DCAE79A00C2EAA2 /* ViewController.swift in Sources */,
+				8266F95A1DCE7F9900392F0E /* BaseControllerWithMenu.swift in Sources */,
 				82F47FE41DCAE79A00C2EAA2 /* AppDelegate.swift in Sources */,
+				82F480131DCAEB3300C2EAA2 /* BaseCollectionView.swift in Sources */,
+				82F480181DCB27FE00C2EAA2 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyBaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.agiletech.MyBaseProject.MyBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyBaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.agiletech.MyBaseProject.MyBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +528,7 @@
 				82F4800A1DCAE79A00C2EAA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82F4800B1DCAE79A00C2EAA2 /* Build configuration list for PBXNativeTarget "MyBaseProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +537,7 @@
 				82F4800D1DCAE79A00C2EAA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82F4800E1DCAE79A00C2EAA2 /* Build configuration list for PBXNativeTarget "MyBaseProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +546,7 @@
 				82F480101DCAE79A00C2EAA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
